@@ -494,34 +494,63 @@ Write code on a whiteboard or paper, not a computer. Test with some sample input
 
 - ### Arrays
     - Implement an automatically resizing vector.
+    - [x] Books:
+        - ~~Algorithm Desgin Manual.~~
+        - ~~Introduction to algorithms.~~
     - [ ] Description:
-        - [Arrays (video)](https://www.coursera.org/learn/data-structures/lecture/OsBSF/arrays)
+        - ~~[Arrays (video)](https://www.coursera.org/learn/data-structures/lecture/OsBSF/arrays)~~
         - [UC Berkeley CS61B - Linear and Multi-Dim Arrays (video)](https://archive.org/details/ucberkeley_webcast_Wp8oiO_CZZE) (Start watching from 15m 32s)
         - [Basic Arrays (video)](https://archive.org/details/0102WhatYouShouldKnow/02_04-basicArrays.mp4)
         - [Multi-dim (video)](https://archive.org/details/0102WhatYouShouldKnow/02_05-multidimensionalArrays.mp4)
-        - [Dynamic Arrays (video)](https://www.coursera.org/learn/data-structures/lecture/EwbnV/dynamic-arrays)
-        - [Jagged Arrays (video)](https://www.youtube.com/watch?v=1jtrQqYpt7g)
+        - ~~[Dynamic Arrays (video)](https://www.coursera.org/learn/data-structures/lecture/EwbnV/dynamic-arrays)~~
+        - ~~[Jagged Arrays (video)](https://www.youtube.com/watch?v=1jtrQqYpt7g)~~
         - [Jagged Arrays (video)](https://archive.org/details/0102WhatYouShouldKnow/02_06-jaggedArrays.mp4)
         - [Resizing arrays (video)](https://archive.org/details/0102WhatYouShouldKnow/03_01-resizableArrays.mp4)
-    - [ ] Implement a vector (mutable array with automatic resizing):
+    - [ ] Implement a vector [C++ Implementation](https://gitlab.com/wow2006/datastructures/-/tree/master/DataStructures%2FDynamicArray):
+        - [x] constractors
+            - ~~default.~~
+            - ~~count.~~
+            - ~~count with default value.~~
+            - ~~template iterator.~~
+            - ~~copy constructor.~~
+            - ~~move constructor.~~
+            - ~~initializer_list.~~
+        - [x] operator=
+            - ~~Copy assignment operator.~~
+            - ~~Move assignment operator.~~
+        - [ ] assign
+        - [x] Elements access:
+            - ~~at(index)~~ - returns item at given index, blows up if index out of bounds
+            - ~~operator[]~~
+            - ~~front~~
+            - ~~back~~
+            - ~~data~~
+        - [ ] iterators
+            - begin/cbegin
+            - end/cend
+            - rbegin/crbegin
+            - rend/crend
+        - [ ] Capacity:
+            - ~~empty~~
+            - ~~size~~ - number of items
+            - ~~max_size~~
+            - ~~reserve~~
+            - ~~capacity~~ - number of items it can hold
+            - shrink_to_fit
+        - [ ] Modifiers
+            - ~~clear~~
+            - insert
+            - emplace
+            - erase
+            - ~~push_back~~
+            - emplace_back
+            - ~~pop_back~~
+            - resize
+            - swap
         - [ ] Practice coding using arrays and pointers, and pointer math to jump to an index instead of using indexing.
         - [ ] new raw data array with allocated memory
             - can allocate int array under the hood, just not use its features
             - start with 16, or if starting number is greater, use power of 2 - 16, 32, 64, 128
-        - [ ] size() - number of items
-        - [ ] capacity() - number of items it can hold
-        - [ ] is_empty()
-        - [ ] at(index) - returns item at given index, blows up if index out of bounds
-        - [ ] push(item)
-        - [ ] insert(index, item) - inserts item at index, shifts that index's value and trailing elements to the right
-        - [ ] prepend(item) - can use insert above at index 0
-        - [ ] pop() - remove from end, return value
-        - [ ] delete(index) - delete item at index, shifting all trailing elements left
-        - [ ] remove(item) - looks for value and removes index holding it (even if in multiple places)
-        - [ ] find(item) - looks for value and returns first index with that value, -1 if not found
-        - [ ] resize(new_capacity) // private function
-            - when you reach capacity, resize to double the size
-            - when popping an item, if size is 1/4 of capacity, resize to half
     - [ ] Time
         - O(1) to add/remove at end (amortized for allocations for more space), index, or update
         - O(n) to insert/remove elsewhere
