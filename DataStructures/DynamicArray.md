@@ -1,0 +1,66 @@
+- ### Dynamic Array
+    - Implement an automatically resizing vector.
+    - [x] Books:
+        - ~~Algorithm Desgin Manual.~~
+        - ~~Introduction to algorithms.~~
+    - [x] Description:
+        - ~~[Arrays (video)](https://www.coursera.org/learn/data-structures/lecture/OsBSF/arrays)~~
+        - ~~[UC Berkeley CS61B - Linear and Multi-Dim Arrays (video)](https://archive.org/details/ucberkeley_webcast_Wp8oiO_CZZE) (Start watching from 15m 32s)~~
+        - ~~[Basic Arrays (video)](https://archive.org/details/0102WhatYouShouldKnow/02_04-basicArrays.mp4)~~
+        - ~~[Multi-dim (video)](https://archive.org/details/0102WhatYouShouldKnow/02_05-multidimensionalArrays.mp4)~~
+        - ~~[Dynamic Arrays (video)](https://www.coursera.org/learn/data-structures/lecture/EwbnV/dynamic-arrays)~~
+        - ~~[Jagged Arrays (video)](https://www.youtube.com/watch?v=1jtrQqYpt7g)~~
+        - ~~[Jagged Arrays (video)](https://archive.org/details/0102WhatYouShouldKnow/02_06-jaggedArrays.mp4)~~
+        - ~~[Resizing arrays (video)](https://archive.org/details/0102WhatYouShouldKnow/03_01-resizableArrays.mp4)~~
+    - [ ] Implement a vector [C++ Implementation](https://gitlab.com/wow2006/datastructures/-/tree/master/DataStructures%2FDynamicArray):
+        - [x] constractors
+            - ~~default.~~
+            - ~~count.~~
+            - ~~count with default value.~~
+            - ~~template iterator.~~
+            - ~~copy constructor.~~
+            - ~~move constructor.~~
+            - ~~initializer_list.~~
+        - [x] operator=
+            - ~~Copy assignment operator.~~
+            - ~~Move assignment operator.~~
+        - [ ] assign
+        - [x] Elements access:
+            - ~~at(index)~~ - returns item at given index, blows up if index out of bounds
+            - ~~operator[]~~
+            - ~~front~~
+            - ~~back~~
+            - ~~data~~
+        - [ ] iterators
+            - ~~begin/cbegin~~
+            - ~~end/cend~~
+            - rbegin/crbegin
+            - rend/crend
+        - [ ] Capacity:
+            - ~~empty~~
+            - ~~size~~ - number of items
+            - ~~max_size~~
+            - ~~reserve~~
+            - ~~capacity~~ - number of items it can hold
+            - shrink_to_fit
+        - [ ] Modifiers
+            - ~~clear~~
+            - insert
+            - emplace
+            - erase
+            - ~~push_back~~
+            - emplace_back
+            - ~~pop_back~~
+            - resize
+            - swap
+        - [ ] Practice coding using arrays and pointers, and pointer math to jump to an index instead of using indexing.
+        - [ ] new raw data array with allocated memory
+            - can allocate int array under the hood, just not use its features
+            - start with 16, or if starting number is greater, use power of 2 - 16, 32, 64, 128
+    - [ ] Time
+        - O(1) to add/remove at end (amortized for allocations for more space), index, or update
+        - O(n) to insert/remove elsewhere
+    - [ ] Space
+        - contiguous in memory, so proximity helps performance
+        - space needed = (array capacity, which is >= n) * size of item, but even if 2n, still O(n)
+
