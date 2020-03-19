@@ -31,36 +31,36 @@
             - ~~front~~
             - ~~back~~
             - ~~data~~
-        - [ ] iterators
+        - [x] iterators
             - ~~begin/cbegin~~
             - ~~end/cend~~
-            - rbegin/crbegin
-            - rend/crend
-        - [ ] Capacity:
+            - ~~rbegin/crbegin~~
+            - ~~rend/crend~~
+        - [x] Capacity:
             - ~~empty~~
             - ~~size~~ - number of items
             - ~~max_size~~
             - ~~reserve~~
             - ~~capacity~~ - number of items it can hold
-            - shrink_to_fit
+            - ~~shrink_to_fit~~
         - [ ] Modifiers
             - ~~clear~~
-            - insert
+            - ~~insert~~
             - emplace
-            - erase
+            - ~~erase~~
             - ~~push_back~~
             - emplace_back
             - ~~pop_back~~
             - resize
             - swap
-        - [ ] Practice coding using arrays and pointers, and pointer math to jump to an index instead of using indexing.
-        - [ ] new raw data array with allocated memory
+        - [x] Practice coding using arrays and pointers, and pointer math to jump to an index instead of using indexing.
+        - [x] new raw data array with allocated memory
             - can allocate int array under the hood, just not use its features
-            - start with 16, or if starting number is greater, use power of 2 - 16, 32, 64, 128
-    - [ ] Time
+            - ~~start with 16, or if starting number is greater, use power of 2 - 16, 32, 64, 128
+    - [x] Time
         - O(1) to add/remove at end (amortized for allocations for more space), index, or update
         - O(n) to insert/remove elsewhere
-    - [ ] Space
+    - [x] Space
         - contiguous in memory, so proximity helps performance
         - space needed = (array capacity, which is >= n) * size of item, but even if 2n, still O(n)
 
